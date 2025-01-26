@@ -68,7 +68,24 @@
                   </ul>
                 </div>
                 <div class="">
-                  <a class="btn bg-bike-primary text-white">Login</a>
+                  <div class=""><!-- Open the modal using ID.showModal() method -->
+                    <button class="btn bg-bike-primary text-white" onclick="my_modal_2.showModal()">Login</button>
+                    <dialog id="my_modal_2" class="modal">
+                      <div class="flex bg-gradient-to-br from-red-200 to-orange-100 justify-between items-center modal-box">
+                        <div>
+                          <h3 class="text-lg font-bold mb-3">Login</h3>
+                          <input type="text" class="p-3" placeholder="Your Email"><br>
+                          <input type="text" class="p-3" placeholder="Password">
+                   
+                        </div>
+                        <div>
+                          <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg border-bike-primary text-bike-primary">Login</button>
+                        </div>
+                      </div>
+                      <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                      </form>
+                    </dialog></div>
                 </div>
               </div>
         </nav>
